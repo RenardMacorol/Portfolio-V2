@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+	/* Core Foundations */
+	--background: #2E1E20;
+	/* Coffee Bean: Deep, heavy rustic background */
+	--foreground: #FFF1CB;
+	/* Cornsilk: Warm, readable parchment paper text */
+
+	--charcoal-brown: #2B3630;
+	/* Slate/mossy dark accent */
+	--sandy-clay: #DAAF74;
+	/* Muted golden tan */
+	--brown-bark: #644128;
+	/* Rich medium leather brown */
+	--cinnamon-wood: #C5694B;
+	/* Warm accent terracotta */
+	--muted-teal: #7EA78E;
+	/* The requested cyan/teal touch (Lighter) */
+	--muted-teal-2: #719483;
+	/* Deep cyan/teal secondary glow */
+	--dry-sage: #B9BE9A;
+	/* Faded leaf accent */
+	--royal-gold: #FAD264;
+	/* Antique illumination gold */
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: 'Georgia', serif;
+
+	/* Custom Color Utility Mappings for Tailwind v4 */
+	--color-coffeeBean: var(--background);
+	--color-cornsilk: var(--foreground);
+	--color-charcoalBrown: var(--charcoal-brown);
+	--color-sandyClay: var(--sandy-clay);
+	--color-brownBark: var(--brown-bark);
+	--color-cinnamonWood: var(--cinnamon-wood);
+	--color-mutedTeal: var(--muted-teal);
+	--color-mutedTealSecondary: var(--muted-teal-2);
+	--color-drySage: var(--dry-sage);
+	--color-royalGold: var(--royal-gold);
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: 'Georgia', serif;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
