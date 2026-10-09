@@ -16,7 +16,7 @@ export const ledger = [
 		manifestType: 'Deep Learning Neural Core',
 		description:
 			'Constructed an end-to-end verification framework via a Siamese layout with a ResNet50 framework backbone and Multi-Head Cross-Attention modules. Combined a Flask backend with a responsive Flutter terminal.',
-		runes: ['ResNet50', 'Cross-Attention', 'Flask API', 'Flutter'],
+		runes: ['ResNet50', 'Cross-Attention', 'Flask API', 'Flutter', 'Python', 'Google Colab'],
 		image:
 			'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
 		github: 'https://github.com/RenardMacorol',
@@ -46,6 +46,18 @@ export const ledger = [
 		github: 'https://github.com/RenardMacorol',
 		icon: ShieldCheck,
 		entryNo: '03',
+	},
+	{
+		title: 'Human Capital Management System',
+		manifestType: 'Centralized Management Registry',
+		description:
+			'An application where Management tracks Timein and Timeout of employee, with dashboard analytics to see KPI performance',
+		runes: ['React', 'Tailwind CSS', 'NOSQL', 'ExpressJs', 'JavaScript', 'GCP'],
+		image:
+			'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
+		github: 'https://github.com/RenardMacorol',
+		icon: ShieldCheck,
+		entryNo: '04',
 	},
 ];
 
