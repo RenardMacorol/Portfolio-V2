@@ -5,13 +5,14 @@ import CertificationsSection from './components/Certifications';
 import Experience from '@/app/components/Experience';
 import Projects from '@/app/components/Projects';
 import Footer from '@/app/components/Footer';
+import SceneCanvasWrapper from '@/app/components/SceneCanvasWrapper';
 
 export default function Home() {
-
 	return (
-		<div className="min-h-screen bg-skyDark text-gray-100 selection:bg-witchPurple selection:text-white">
+		<div className="relative min-h-screen text-cornsilk selection:bg-mutedTeal selection:text-charcoalBrown">
+			<SceneCanvasWrapper />
 			<Navbar />
-			<main className="pb-12">
+			<main className="relative z-10 pb-12">
 				<Hero />
 				<Experience />
 				<Projects />
