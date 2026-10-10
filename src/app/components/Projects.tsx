@@ -170,7 +170,6 @@ export default function Projects() {
 										● Production Ready
 									</span>
 									<Button
-										asChild
 										variant="outline"
 										size="sm"
 										className="rounded-none bg-coffeeBean border-2 border-cornsilk/25 text-cornsilk/80 hover:text-charcoalBrown hover:bg-royalGold hover:border-royalGold gap-1 font-mono uppercase tracking-wide text-xs"

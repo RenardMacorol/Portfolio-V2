@@ -57,7 +57,6 @@ export default function Footer() {
 					{/* Channels of transmission */}
 					<div className="flex items-center gap-2 font-mono uppercase tracking-wider text-xs">
 						<Button
-							asChild
 							variant="ghost"
 							className="text-sandyClay/80 hover:text-mutedTeal gap-2"
 						>
@@ -70,7 +69,6 @@ export default function Footer() {
 							</a>
 						</Button>
 						<Button
-							asChild
 							variant="ghost"
 							className="text-sandyClay/80 hover:text-mutedTeal gap-2"
 						>

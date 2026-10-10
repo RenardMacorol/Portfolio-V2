@@ -50,8 +50,8 @@ export default function Hero() {
 					}
 				}}
 				className={`ornate-frame max-w-3xl w-full text-center z-10 mx-auto cursor-pointer transition-all duration-500 ease-out ${revealed
-						? 'bg-charcoalBrown/50 backdrop-blur-md shadow-[0_15px_35px_rgba(0,0,0,0.6)] p-8 md:p-12'
-						: 'bg-transparent p-4 md:p-6 hover:bg-charcoalBrown/10'
+					? 'bg-charcoalBrown/50 backdrop-blur-md shadow-[0_15px_35px_rgba(0,0,0,0.6)] p-8 md:p-12'
+					: 'bg-transparent p-4 md:p-6 hover:bg-charcoalBrown/10'
 					}`}
 			>
 				<div ref={badgeRef}>
@@ -81,12 +81,26 @@ export default function Hero() {
 							&ldquo;Bridging backend infrastructure foundations with sophisticated neural architectures. I organize raw data chaos into highly efficient, secure, and intelligent production lifecycles.&rdquo;
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center items-center pb-2">
-							<Button asChild size="lg" className="gap-2" onClick={stopAndDo(() => { })}>
-								<a href="#projects"><Scroll className="w-4 h-4" data-icon="inline-start" />Examine the Chronicles</a>
-							</Button>
-							<Button asChild variant="outline" size="lg" className="border-royalGold text-royalGold hover:bg-royalGold hover:text-charcoalBrown" onClick={stopAndDo(() => { })}>
-								<a href="mailto:macorolrenard023@gmail.com">Send Dispatch</a>
-							</Button>
+							<Button
+								size="lg"
+								nativeButton={false}
+								className="gap-2"
+								render={
+									<a href="#projects">
+										<Scroll className="w-4 h-4" data-icon="inline-start" />
+										Examine the Chronicles
+									</a>
+								}
+								onClick={stopAndDo(() => { })}
+							/>
+							<Button
+								size="lg"
+								variant="outline"
+								nativeButton={false}
+								className="border-royalGold text-royalGold hover:bg-royalGold hover:text-charcoalBrown"
+								render={<a href="mailto:macorolrenard023@gmail.com">Send Dispatch</a>}
+								onClick={stopAndDo(() => { })}
+							/>
 						</div>
 					</div>
 				</div>

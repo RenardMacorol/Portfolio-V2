@@ -54,12 +54,18 @@ export default function Navbar() {
 				</Link>
 				<div className="hidden md:flex gap-2 font-serif font-medium">
 					{links.map(({ href, label, icon: Icon }) => (
-						<Button key={href} variant="ghost" asChild className="text-cornsilk/80 hover:text-mutedTeal">
-							<Link href={href} className="flex items-center gap-1.5">
-								<Icon className="w-4 h-4 text-sandyClay/70" data-icon="inline-start" />
-								<span>{label}</span>
-							</Link>
-						</Button>
+						<Button
+							key={href}
+							variant="ghost"
+							nativeButton={false}
+							render={
+								<Link href={href} className="flex items-center gap-1.5">
+									<Icon className="w-4 h-4 text-sandyClay/70" data-icon="inline-start" />
+									<span>{label}</span>
+								</Link>
+							}
+							className="text-cornsilk/80 hover:text-mutedTeal"
+						/>
 					))}
 				</div>
 				<Sheet open={open} onOpenChange={setOpen}>
@@ -78,15 +84,15 @@ export default function Navbar() {
 								<Button
 									key={href}
 									variant="ghost"
-									asChild
+									render={
+										<Link href={href} className="flex items-center gap-2">
+											<Icon className="w-4 h-4 text-sandyClay/70" data-icon="inline-start" />
+											<span>{label}</span>
+										</Link>
+									}
 									className="justify-start text-cornsilk/80 hover:text-mutedTeal"
 									onClick={() => setOpen(false)}
-								>
-									<Link href={href} className="flex items-center gap-2">
-										<Icon className="w-4 h-4 text-sandyClay/70" data-icon="inline-start" />
-										<span>{label}</span>
-									</Link>
-								</Button>
+								/>
 							))}
 						</div>
 					</SheetContent>
