@@ -358,7 +358,10 @@ export default function SceneCanvas() {
 				const t = Math.min(1, (scrollY - fadeRangeStart) / (fadeRangeEnd - fadeRangeStart));
 				opacity = 1 - t * 0.88; // floor around 0.12, never fully gone
 			}
-			canvas.style.opacity = String(opacity);
+			if (canvas) {
+
+				canvas.style.opacity = String(opacity);
+			}
 
 			if (!prefersReducedMotion) {
 				core.rotation.x = elapsed * 0.2;
